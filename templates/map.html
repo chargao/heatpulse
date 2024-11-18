@@ -1,0 +1,19 @@
+{% block map %}
+<!-- <section></section> -->
+<form style="margin:auto;" method="post">
+    <input type=text name=location>
+    <input type=button value=Locate>
+</form>
+<div id="content">
+    <div class="info">Hover over a country</div>
+    <svg width="620px" height="600px">
+        <g class="map"></g>
+        <g class="bounding-box">
+            <rect></rect>
+        </g>
+        <g class="centroid">
+            <circle r="4"></circle>
+        </g>
+    </svg>
+</div>
+{% endblock %}

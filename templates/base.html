@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        {% block head %}
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="Urban Heat Resilience Action" />
+        <title>Urban Heat Resilience Action: {% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <!-- <link rel="icon" href="favicon.png"> -->
+        {% endblock %}
+</html>
+<body>
+    <header>
+        <h1>Urban Heat Resilience Action</h1>
+        <nav>
+            <ul>
+                <li><a class="current" href="#">Home</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        {% block footer %}
+        Urban Heat Resilience
+        {% endblock %}
+    </footer>
+</body>
+</html>
