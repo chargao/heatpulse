@@ -8,7 +8,59 @@
 
 {% block content %}
 
-{{homepage_text|safe}}
+<h3>Introduction:</h3>
+<p>Urban heat is the phenomenon where urban areas experience higher temperatures than less
+    urbanized areas due to the built environment, human activity, and air pollution. Heat is the #1 weather-related
+    killer and the proportion of the human population living in urban areas is projected to increase to 70% by 2050,
+    making urban heat resilience action an imperative. Explore this map to see where heat mitigation and adaptation
+    action should be prioritized.</p>
+
+    {% include "map-todo.html" ignore missing %}
+    <b>Insert map here</b>
+
+<h3>What are the impacts of urban heat and how will that evolve in the future?</h3>
+<ul>
+    <li>Projected costs due to extreme heat events on the economy, health, infrastructure, energy and water
+        demand, biodiversity, etc.</li>
+    <li>Widening socioeconomic disparities and comorbidities with air pollution,
+        etc.</li>
+    <li>Intensified and more frequent heat waves due to climate change</li>
+    <li>Urban/extreme heat is
+        significant enough to warrant not being sidelined or lumped in with other climate action/priorities but
+        addressed by itself</li></ul>
+
+<img src="{{ url_for('static', filename='epa.png') }}">
+<h3>What actions are cities taking (as a whole in the US)?</h3>
+<ul>
+    <li>Heat
+        mapping campaigns (NOAA Heat Watch) or satellite data to map heat risk/temperature</li>
+    <li>Engaging with
+        communities and analyzing demographics to understand heat risk</li>
+    <li>Creating heat action plans or
+        incorporating heat action into climate plans</li>
+    <li>Partnering with local organizations and universities to
+        power solutions and research</li></ul>
+<h3>What is still needed for resilience to match the heat?</h3>
+<ul>
+
+    <li>A 2022 study of US municipal plans found that heat is a growing concern but solid action is still
+        underwhelming - need stronger "heat governance" (source: MDPI)
+        *Offset costs and time for cities to take
+        action:</li>
+    <li>Partner with local organizations already doing something similar (e.g., planting trees)</li>
+
+    <li>Cities should go for low-cost high-impact solutions relevant to their needs (pros/cons of common heat solutions)
+    </li>
+    <li>Education/upskilling the workforce (Arsht-Rock heat platform for city officials; may also need training
+        for implementing solutions such as selecting plants for urban greening)
+        *Metrics, reports, and dashboards to
+        track metrics and provide solid data on how effectively resources are being spent on heat action that makes a
+        difference:</li>
+    <li>Some cities have "climate smart" dashboards or reports which update progress on solutions;
+        the same should be done for heat resilience solutions</li>
+    <li>This will also help build a business case for
+        investing in heat resilience (justify budgeting) as well as bolster confidence and understanding of what
+        solutions are most effective for what cities with specific needs</li></ul>
 
 <script type="text/javascript" src="{{ url_for('static', filename='map.js') }}"></script>
 
