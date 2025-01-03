@@ -6,7 +6,10 @@ import { env } from '../config/env';
 export function MapPage() {
   return (
     <div className="flex flex-col h-[calc(100vh-64px)]">
-      <div className="h-[60%] w-full relative">
+      <h2 className="text-center text-2xl font-bold text-black m-6">
+        Interactive Map
+      </h2>
+      <div className="h-[50%] w-full relative">
         <Map
           initialViewState={{
             longitude: -97.7431,
@@ -21,38 +24,59 @@ export function MapPage() {
         </Map>
       </div>
 
-      <div className="flex-1 overflow-y-auto p-6 bg-gray-50">
+      <div className="flex-1 overflow-y-auto p-6 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">
-            Urban Heat Analysis
-          </h2>
-          
-          <div className="bg-white rounded-lg shadow-md p-6 mb-6">
-            <h3 className="text-xl font-semibold text-gray-700 mb-3">
-              Understanding Heat Islands
+
+          <div className="bg-gray-50 rounded-lg shadow-md p-6 mb-6">
+            <h3 className="text-xl font-semibold text-black m-3">
+              About the map
             </h3>
-            <p className="text-gray-600 mb-4">
-              Urban heat islands are areas within cities that experience higher temperatures
-              than outlying areas. These heat islands are created by dense concentrations
-              of pavement, buildings, and other surfaces that absorb and retain heat.
+            <p className="m-4">
+              In May 2024, the CDC launched the Heat and Health Index (HHI), a national tool assessing heat vulnerability across U.S. ZIP Code Tabulation Areas (ZCTAs). The HHI integrates four key modules:</p>
+            <p className="m-4">
+              <ol className="list-decimal list-inside">
+                <li><span className='font-bold'>Historical Heat and Health Burden:</span> Evaluates past local heat impacts on health.</li>
+                <li><span className='font-bold'>Sensitivity:</span> Assesses risk from pre-existing health conditions.</li>
+                <li><span className='font-bold'>Sociodemographic:</span> Considers social and demographic factors affecting heat exposure and resilience.</li>
+                <li><span className='font-bold'>Natural and Built Environment:</span> Examines environmental features influencing heat exposure and coping capacity.</li>
+              </ol>
             </p>
-            <p className="text-gray-600">
-              Our map visualization will soon feature detailed overlays showing heat
-              vulnerability zones and successful mitigation strategies implemented across
-              different cities in the United States.
+            <p className="m-4">
+              This index aids public health officials, city planners, policymakers, and community members in identifying and prioritizing areas requiring focused heat-related health interventions.
             </p>
+
+            Map Sources:
+            <ul className='list-none'>
+              <li><a className='underline' href='https://ephtracking.cdc.gov/Applications/heatTracker/'>CDC Health & Heat Index</a></li>
+              <li><a className='underline' href='https://www.hhs.gov/about/news/2024/05/31/biden-harris-administration-launches-nationwide-heat-health-tool-protect-communities-most-impacted-extreme-heat.html'>Heat & Health Tracker</a></li>
+            </ul>
           </div>
 
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h3 className="text-xl font-semibold text-gray-700 mb-3">
-              Coming Soon
+          <div className="bg-gray-50 rounded-lg shadow-md p-6 mb-6">
+            <h3 className="text-xl font-semibold text-black m-3">
+              Using the map
             </h3>
-            <ul className="list-disc list-inside text-gray-600 space-y-2">
-              <li>Heat vulnerability index overlays</li>
-              <li>Solution spotlights and case studies</li>
-              <li>Real-time temperature data</li>
-              <li>Community impact assessments</li>
-            </ul>
+            <p className="m-4">
+              Ths interactive map explores where the most heat-vulnerable communities are and how that intersects with their ability to adapt and mitigate heat based on additional overlaying factors like building age, renting, poverty.
+            </p>
+            <p className="m-4">Discover
+              <ul className="list-disc list-inside ml-5">
+                <li>Explore factors that affect heat vulnerability in the US</li>
+                <li>Make better decisions when choosing solutions and know where to prioritize action</li>
+              </ul>
+            </p>
+            <p className="m-4">Explore Filters
+              <ul className="list-disc list-inside ml-5">
+                <li>Building Age</li>
+                <li>Rent</li>
+                <li>Poverty</li>
+              </ul>
+            </p>
+            <p className="m-4">Find Implementable Solutions
+              <ul className="list-disc list-inside ml-5">
+                <li>Using this interactive map, </li>
+              </ul>
+            </p>
           </div>
         </div>
       </div>
