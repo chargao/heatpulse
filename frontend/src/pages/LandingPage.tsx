@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Send } from 'lucide-react';
 
-export function ContactPage() {
+export function LandingPage() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',

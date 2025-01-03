@@ -3,7 +3,7 @@ import Map, { NavigationControl } from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import { env } from '../config/env';
 
-export function ExplorePage() {
+export function CaseStudiesPage() {
   return (
     <div className="flex flex-col h-[calc(100vh-64px)]">
       <div className="h-[60%] w-full relative">

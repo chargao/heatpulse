@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Map, Info, Mail, X } from 'lucide-react';
+import { Home, Map, Info, Mail, X } from 'lucide-react';
 import { clsx } from 'clsx';
 
 interface SidebarProps {
@@ -10,9 +10,10 @@ interface SidebarProps {
 
 export function Sidebar({ isOpen, onClose }: SidebarProps) {
   const menuItems = [
-    { to: '/', icon: Map, label: 'Explore' },
+    { to: '/', icon: Home, label: 'Landing' },
+    { to: '/map', icon: Map, label: 'Map' },
     { to: '/about', icon: Info, label: 'About' },
-    { to: '/contact', icon: Mail, label: 'Contact' },
+    { to: '/case-studies', icon: Mail, label: 'Case Studies' },
   ];
 
   return (

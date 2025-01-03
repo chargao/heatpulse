@@ -2,9 +2,10 @@ import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Sidebar } from './components/Sidebar';
-import { ExplorePage } from './pages/ExplorePage';
+import { LandingPage } from './pages/LandingPage';
+import { MapPage } from './pages/MapPage';
 import { AboutPage } from './pages/AboutPage';
-import { ContactPage } from './pages/ContactPage';
+import { CaseStudiesPage } from './pages/CaseStudiesPage';
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -17,9 +18,10 @@ function App() {
         
         <main>
           <Routes>
-            <Route path="/" element={<ExplorePage />} />
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/map" element={<MapPage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/case-studies" element={<CaseStudiesPage />} />
           </Routes>
         </main>
       </div>
