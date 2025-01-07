@@ -2,19 +2,44 @@ import React from 'react';
 
 const teamMembers = [
   {
-    name: 'Dr. Katherine Lu',
-    role: 'Lead Researcher',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=500&h=500',
+    name: 'Barbara Milewski',
+    role: 'Project Lead',
+    image: 'TODO',
   },
   {
-    name: 'Marcus Rodriguez',
-    role: 'Urban Planning Specialist',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=500&h=500',
+    name: 'Brenna Norris',
+    role: 'Software Dev./Tech Project Manager',
+    image: 'TODO',
   },
   {
-    name: 'Dr. Aisha Thompson',
-    role: 'Climate Scientist',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=500&h=500',
+    name: 'Charlie Gao',
+    role: 'Senior Software Developer',
+    image: 'TODO',
+  },
+  {
+    name: 'Georgia Lechlitner',
+    role: 'Product Lead',
+    image: 'TODO',
+  },
+  {
+    name: 'Aiman Shahpurwala',
+    role: 'GIS Analyst',
+    image: 'TODO',
+  },
+  {
+    name: 'Jessica Bellwoar',
+    role: 'Strategist & Development Lead',
+    image: 'TODO',
+  },
+  {
+    name: 'Sara Lasseter',
+    role: 'Market Research & Communications',
+    image: 'TODO',
+  },
+  {
+    name: 'Cole Stites-Clayton',
+    role: 'Software Engineer',
+    image: 'TODO',
   },
 ];
 
@@ -25,34 +50,16 @@ export function AboutPage() {
         <section className="bg-white rounded-lg shadow-md p-8 mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Mission</h2>
           <p className="text-gray-600 text-lg mb-8">
-            HeatPulse is dedicated to addressing one of the most pressing challenges
-            of our time: urban heat vulnerability. We believe in creating resilient
-            communities through data-driven solutions and collaborative approaches
-            to combat extreme heat events.
+          HeatPulse aims to improve heat resilience action by providing accessible and actionable data to city officials so they can make data-driven decisions, understand best practices, and compare implemented solutions in similar cities of geography, climate, topography, culture and other relevant factors.
           </p>
-          
-          <h3 className="text-2xl font-semibold text-gray-800 mb-4">Our Vision</h3>
-          <p className="text-gray-600 text-lg mb-6">
-            We envision a future where cities are equipped with the knowledge,
-            tools, and strategies needed to protect their communities from extreme
-            heat events. Through our platform, we aim to facilitate the sharing of
-            best practices and innovative solutions across urban areas in America.
-          </p>
-
-          <div className="bg-orange-50 border-l-4 border-orange-500 p-4">
-            <p className="text-orange-700">
-              "Together, we can build heat-resilient communities that protect our
-              most vulnerable populations and create sustainable urban environments
-              for future generations."
-            </p>
-          </div>
         </section>
 
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
             Meet Our Team
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <p className='text-center m-4'>We are a group of Climatebase fellows brought together by our experiences with extreme heat.</p>
+          <div className="grid md:grid-cols-4 gap-4">
             {teamMembers.map((member) => (
               <div
                 key={member.name}
@@ -61,7 +68,7 @@ export function AboutPage() {
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-60 object-cover"
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-800">
